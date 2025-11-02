@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "display";
+    src: url(./fontes/SF-Pro-Display-Regular.otf) format("opentype")
+}
+@font-face {
+    font-family: "texto";
+    src: url(./fontes/SF-Pro-Text-Regular.otf) format("opentype");
+}
+@font-face {
+    font-family: "redonda";
+    src: url(./fontes/SF-Pro-Rounded-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "compacta";
+    src: url(./fontes/SF-Compact.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "novaiorque";
+    src: url(./fontes/NewYork.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "display", sans-serif;
+    text-indent: 0px;
+    font-weight: bolder;
+    margin: 0.5em 0px;
+}
+
+/*Cabeçalho*/
+
+header{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 1em;
+    background-color: lightgray;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 0px 0px 1em 1em;
+}
+
+.hcontainer {
+    display: flex;
+}
+
+/*Menu lateral*/
+.container {
+    display: flex;
+    margin: 2vh 5%;
+    max-width: 90vw;
+}
+
+aside {
+    width: calc(fit-content +  2em);
+    max-width: fit-content;
+    height: 100%;
+    background-color: gray;
+    position: sticky;
+    top: 1em;
+    margin-right: 5%;
+    z-index: 10;
+    font-family: "compacta";
+    border-radius: 1em 1em 1em 1em;
+}
+
+main {
+    flex: 1;
+    
+}
+
+aside>nav>a {
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+aside>nav>a#diario {
+    margin-top: 3em;
+    border-top: 1px solid white;
+
+}
+
+/*Main*/
+
+div {
+    min-width: fit-content;
+}
+
+main {
+    font-family: "texto", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #333;
+}
+
+main > article > section > p, main > article > section > div > p {
+    margin: 1em 0px;
+    text-indent: 1.5em;
+}
+
+div > main > article > section.Imagem {
+    background-image: url(imagens/IMG-20191225-WA0047.jpg);
+    background-attachment: fixed;
+    background-position: center 45%;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0px 0px 5px black;
+}
+
+div > main > article > section > div.imgtext {
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+}
+
+div > main > article > section.Branco {
+    margin : 2em 0px;
+    padding: 1em
+}
+
+/*Footer*/
