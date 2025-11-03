@@ -34,6 +34,7 @@ body, html {
     min-width: 320px;
 
     padding: 0px 0em;
+    overflow-x: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -53,13 +54,13 @@ header{
 
     padding: 2em 1em;
 
-    margin: 0px 10%;
+    margin: auto;
+    width: 80%;
 
     box-shadow: 2px 2px 5px black;
 
     transition: width 1.0s ease;
     transition: margin 1.0s ease;
-
 
 }
 
@@ -96,6 +97,23 @@ aside>nav>a{
     text-indent: 0em;
 }
 
+button {
+    display: block;
+    
+    padding: 1em;
+
+    color: white;
+    text-decoration: none;
+
+    border-bottom: 1px dashed white;
+    
+    text-indent: 0em;
+    background-color: inherit;
+    border: inherit;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
 /*flex*/
 
 .flex {
@@ -119,12 +137,22 @@ aside>nav>a{
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
     .flex {
         padding: 0px 0px;
     }
     header{
         width: 100%;
-        margin: 0px 0px;
+        margin: auto;
+    }
+}
+
+@media (max-height: 720px) {
+    .flex {
+        padding: 0px 0px;
+    }
+    header{
+        width: 100%;
+        margin: auto;
     }
 }

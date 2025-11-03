@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impactos das redes</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <header>
@@ -13,15 +14,19 @@
         </h1>
     </header>
     <div class="flex">
-        <aside>
-            <nav>
+        <aside id="grande">
+            <nav id="Invisível">
                 <a href="#cont">Contextualização</a>
                 <a href="#def">Definição do termo</a>
+                <a href="#hist">História</a>
                 <a href="#pro">Problematização</a>
                 <a href="#ide">Desenvolvimento</a>
                 <a href="#imp">Importância</a>
                 <a href="#res">Resoluções</a>
                 <a href="download/SlideFIX.pdf" download="">Acesse o slide!</a>
+            </nav>
+            <nav id="Visível">
+                <button class="ocultar painel">Ocultar painel</button>
             </nav>
         </aside>
         <main>
@@ -45,7 +50,7 @@
                     Acreditamos que, nas redes sociais digitais, pessoas podem a qualquer momento se conectar com outros com os mesmos interesses.
                 </p>
             </article>
-            <article class="branco">
+            <article class="branco" id="hist">
                 <h2>História</h2>
                 <p>
                     No início ,em 1969, havia a ARPANET, uma rede militar que logo abriu-se para uso universitário. Já em 1995 com a ramificação das redes para uso doméstico foi criado o Six Degrees a primeira rede social moderna e logo em 2004 o facebook
