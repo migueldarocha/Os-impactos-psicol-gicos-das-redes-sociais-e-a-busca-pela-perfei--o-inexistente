@@ -28,13 +28,15 @@
 
 body, html {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     min-width: 320px;
-
     padding: 0px 0em;
     overflow-x: none;
+
+    background-image: linear-gradient(to bottom, rgba(206, 225, 252, 0.863) , rgba(4, 30, 66, 0) );
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -50,14 +52,12 @@ p, span, a, li, div {
 /*corpo*/
 
 header{
-    background-color: lightgray;
-
+    background-color: rgb(89, 118, 131);
     padding: 2em 1em;
 
     margin: auto;
-    width: 80%;
-
     box-shadow: 2px 2px 5px black;
+    color: white;
 
     transition: width 1.0s ease;
     transition: margin 1.0s ease;
@@ -67,9 +67,9 @@ header{
 main{
     flex: 1;
 
-    background-color: white;
+    /*background-color: white;*/
     
-    margin: 1em;
+    margin: 1em;;
 }
 
 aside {
@@ -79,9 +79,9 @@ aside {
 
     border-radius: 0em 0em 1em 1em;
 
-    background-color: gray;
+    background-color: rgb(89, 118, 131);
 
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.185);
 }
 
 aside>nav>a{
@@ -137,6 +137,16 @@ button {
 
 }
 
+.imagem> h2 {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.imagem> p {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
 @media (max-width: 720px) {
     .flex {
         padding: 0px 0px;
@@ -155,4 +165,28 @@ button {
         width: 100%;
         margin: auto;
     }
+}
+
+article#def {
+    background-image: url(imagens/mulher-moderna-despreocupada-sorrindo-e-tirando-selfies-em-um-aplicativo-de-smartphone-posando-para-foto-em-seu-sofa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+article#pro {
+    background-image: url(imagens/garoto-de-vista-frontal-sendo-vitima-de-cyberbullying.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+article#imp {
+    background-image: url(imagens/maselanaomequer.jpg);
+    background-size: cover;
+    background-position: left center;
+}
+
+footer{
+    min-height: 350px;
+;
 }
